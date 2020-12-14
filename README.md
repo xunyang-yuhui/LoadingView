@@ -3,7 +3,7 @@
 
 Demo下载
 
-[![ru6oKU.png](https://s3.ax1x.com/2020/12/14/ru6oKU.png)](https://imgchr.com/i/ru6oKU)
+![](https://ftp.bmp.ovh/imgs/2020/12/c837ced4ba13a59e.png)
 
 # 已添加的loading样式
 ## 三个方块动画loading (three square)
