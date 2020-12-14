@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_shape_bg_transparent">
+
+    <com.yu.loadingdemo.Widget.ThreeSquareLoadingView
+        android:id="@+id/loading_ts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:padding="10dp"
+        app:ts_radius="10dp"
+        app:ts_color="#f9e9cd"
+        app:ts_space="5dp"
+        app:ts_during="700"/>
+
+    <com.yu.loadingdemo.Widget.ThreeBallLoadingView
+        android:id="@+id/loading_tb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:padding="10dp"
+        app:tb_during="700"
+        app:tb_height="15dp"
+        app:tb_radius="6dp"
+        app:tb_space="10dp"/>
+
+</LinearLayout>

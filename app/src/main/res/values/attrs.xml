@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--三个方块移动loading-->
+    <declare-styleable name="ThreeSquareLoadingView">
+        <attr name="ts_radius" format="dimension"/>
+        <attr name="ts_color" format="color"/>
+        <!--两个方块间的间距-->
+        <attr name="ts_space" format="dimension"/>
+        <attr name="ts_during" format="integer"/>
+    </declare-styleable>
+
+    <!--三个圆移动loading-->
+    <declare-styleable name="ThreeBallLoadingView">
+        <attr name="tb_radius" format="dimension"/>
+        <attr name="tb_space" format="dimension"/>
+        <attr name="tb_during" format="integer"/>
+        <attr name="tb_color_first" format="color"/>
+        <attr name="tb_color_second" format="color"/>
+        <attr name="tb_color_third" format="color"/>
+        <!--小球运动时的圆心最高点-->
+        <attr name="tb_height" format="dimension"/>
+    </declare-styleable>
+
+</resources>
