@@ -57,6 +57,8 @@ public class ThreeBallLoadingView extends View {
         tb_color_third = array.getColor(R.styleable.ThreeBallLoadingView_tb_color_third, Color.BLUE);
 
         init();
+
+        array.recycle();
     }
 
     private void init() {

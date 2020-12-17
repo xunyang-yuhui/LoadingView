@@ -47,6 +47,8 @@ public class ThreeSquareLoadingView extends View {
         during = array.getInt(R.styleable.ThreeSquareLoadingView_ts_during,1000);
 
         init();
+
+        array.recycle();
     }
 
     private void init() {
