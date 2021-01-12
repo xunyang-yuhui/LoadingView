@@ -28,4 +28,15 @@
         app:tb_radius="6dp"
         app:tb_space="10dp"/>
 
+    <com.yu.loadingdemo.Widget.JumpGraphLoadingView
+        android:id="@+id/loading_jg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:padding="10dp"
+        app:tb_during="700"
+        app:tb_height="15dp"
+        app:tb_radius="6dp"
+        app:tb_space="10dp"/>
+
 </LinearLayout>

@@ -23,6 +23,11 @@
             style="@style/style_main_btn"
             android:text="三个圆8字形的loading"/>
 
+        <Button
+            android:id="@+id/btn_jumpgraph"
+            style="@style/style_main_btn"
+            android:text="弹性跳动图形的loading"/>
+
         <!--<com.yu.loadingdemo.Widget.ThreeBallLoadingView-->
             <!--android:layout_width="match_parent"-->
             <!--android:layout_height="300dp"-->

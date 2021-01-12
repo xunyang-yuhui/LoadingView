@@ -14,6 +14,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import androidx.fragment.app.DialogFragment;
 
+import com.yu.loadingdemo.Widget.JumpGraphLoadingView;
 import com.yu.loadingdemo.Widget.ThreeBallLoadingView;
 import com.yu.loadingdemo.Widget.ThreeSquareLoadingView;
 
@@ -21,6 +22,7 @@ public class LoadingDialogFragment extends DialogFragment {
     private Type type;
     private ThreeSquareLoadingView loading_ts;
     private ThreeBallLoadingView loading_tb;
+    private JumpGraphLoadingView loading_jg;
 
     @Override
     public void onStart() {
@@ -43,14 +45,18 @@ public class LoadingDialogFragment extends DialogFragment {
         params.height = WindowManager.LayoutParams.WRAP_CONTENT;
         window.setAttributes(params);
         View view = inflater.inflate(R.layout.view_dialog, container);
-        loading_ts = (view).findViewById(R.id.loading_ts);
-        loading_tb = (view).findViewById(R.id.loading_tb);
+        loading_ts = view.findViewById(R.id.loading_ts);
+        loading_tb = view.findViewById(R.id.loading_tb);
+        loading_jg = view.findViewById(R.id.loading_jg);
         switch (type) {
             case THREEBALL:
                 loading_tb.setVisibility(View.VISIBLE);
                 break;
             case THREESQUARE:
                 loading_ts.setVisibility(View.VISIBLE);
+                break;
+            case JUMPGRAPH:
+                loading_jg.setVisibility(View.VISIBLE);
                 break;
         }
         return view;
@@ -61,6 +67,6 @@ public class LoadingDialogFragment extends DialogFragment {
     }
 
     public enum Type {
-        THREESQUARE, THREEBALL
+        THREESQUARE, THREEBALL, JUMPGRAPH
     }
 }

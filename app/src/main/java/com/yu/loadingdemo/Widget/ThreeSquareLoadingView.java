@@ -185,7 +185,6 @@ public class ThreeSquareLoadingView extends View {
     public void removeAll() {
         if (valueAnimator != null) {
             valueAnimator.cancel();
-            valueAnimator.removeAllUpdateListeners();
             valueAnimator = null;
         }
     }

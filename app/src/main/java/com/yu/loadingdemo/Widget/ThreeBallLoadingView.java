@@ -225,7 +225,7 @@ public class ThreeBallLoadingView extends View {
     protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
         if (animator != null) {
-            animator.removeAllUpdateListeners();
+            animator.cancel();
             animator = null;
         }
     }
